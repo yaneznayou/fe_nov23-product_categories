@@ -6,7 +6,7 @@ import categoriesFromServer from './api/categories';
 import productsFromServer from './api/products';
 
 function getProductCategory(categId) {
-  return categoriesFromServer.find(ctgr => ctgr.id === categId) || null;
+  return categoriesFromServer.find(categor => categor.id === categId) || null;
 }
 
 function getProductUser(userId) {
